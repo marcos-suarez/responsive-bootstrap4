@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <title>Curso Bootstrap 4</title>
   </head>
@@ -112,7 +114,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center my-3">
-          <h1 class="display-3">Lorem ipsum dolor sit</h1>
+          <h1 class="display-3"><i class="fa fa-globe-americas text-primary mr-3"></i>Lorem ipsum dolor sit</h1>
           <p>Suspendisse bibendum non mauris finibus cursus.</p>
         </div>
       </div>
@@ -269,7 +271,7 @@
         <div class="row">
           <div class="col-12 text-center">
 
-            <h1 class="display-4">Rhoncus purus id</h1>
+            <h1 class="display-4"><i class="fab fa-youtube text-primary mr-3"></i>Rhoncus purus id</h1>
             <p class="lead">Sed in mattis sem. Aliquam odio orci, vehicula vel mollis sit amet, feugiat nec velit.</p>
             <hr/>
 
@@ -282,15 +284,15 @@
 
             <ul class="nav nav-pills justify-content-center mb-5" id="pulls-nav" role="tablist">
 
-              <li nav-item>
+              <li class="nav-item">
                 <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01"> Fusce consequat</a>
               </li>
 
-              <li nav-item>
+              <li class="nav-item">
                 <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">Mollis eleifend</a>
               </li>
 
-              <li nav-item>
+              <li class="nav-item">
                 <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">Sed sollicitudin</a>
               </li>
 
@@ -384,6 +386,124 @@
       </div>
     </div>
 
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-12 text-center my-5">
+
+          <h1 class="display-4"><i class="fas fa-paper-plane text-primary mr-3"></i>Proin eget ante molestie</h1>
+
+        </div>
+
+      </div>
+
+      <div class="row justify-content-center mb-5">
+
+        <div class="col-sm-12 col-md-10 col-lg-8">
+
+          <form>
+
+            <div class="form-row">
+
+              <div class="form-group col-sm-6">
+                
+                <label for="inputNome">Seu nome</label>
+                <input type="text" class="form-control" id="inputNome" placeholder="Nome"/>
+
+              </div>
+
+              <div class="form-group col-sm-6">
+
+                <label for="inputSobrenome">Seu sobrenome</label>
+                <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome"/>
+          
+              </div>
+          </div>
+
+          <div class="form-row">
+
+              <div class="form-group col-sm-12">
+
+                <label for="inputEnd">Seu endereço</label>
+                <input type="text" class="form-control" id="inputEnd" placeholder="Endereço completo"/>
+
+              </div>
+
+          </div>
+
+          <div class="form-row">
+
+              <div class="form-group col-sm-6">
+
+                <label for="inputCidade">Sua cidade</label>
+                <input type="text" class="form-control" id="inputCidade" placeholder="Sua cidade"/>
+
+              </div>
+
+              <div class="form-group col-sm-4">
+
+                <label for="inputEstado">Seu estado</label>
+                <select id="inputEstado" class="form-control">
+
+                  <option selected>Escolha...</option>
+                  <option>...</option>
+                  <option>...</option>
+                  <option>...</option>
+                  <option>...</option>
+                  <option>...</option>
+
+                </select>
+
+              </div>
+
+              <div class="form-group col-sm-2">
+
+                <label for="inputCEP">Seu CEP</label>
+                <input type="text" class="form-control" id="inputaCEP" placeholder="Seu CEP"/>
+
+              </div>
+
+            </div>
+
+            <div class="form-row">
+
+              <div class="form-group col-sm-12">
+
+                <div class="form-check">
+
+                  <label class="form-check-label">
+
+                    <input class="form-check-input" type="checkbox"/> Desejo receber novidades por e-mail
+
+                  </label>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="form-row">
+
+              <div class="col-sm-12">
+  
+                <button type="submit" class="btn btn-primary">Enviar</button>
+
+                <a tabindex="0" class="btn btn-info ml-2" role="button" data-toggle="popover" data-placement="right" data-trigger="focus" title="sed condimentum" data-content="Proin eget ante molestie, rhoncus purus id, lobortis tortor. Sed in mattis sem. Aliquam odio orci, vehicula vel mollis sit amet, feugiat nec velit. Nunc quis interdum erat.">Help</a>
+  
+              </div>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
     <!--Modal-->
     <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-lg" role="document">
@@ -439,5 +559,15 @@
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script>
+      
+      $(function (){
+
+        $('[data-toggle="popover"]').popover()
+
+      });
+
+    </script>
   </body>
 </html>
