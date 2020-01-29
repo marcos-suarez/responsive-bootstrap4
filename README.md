@@ -2,10 +2,10 @@
 
 ## concepts bootstrap4
 
-..* Cards 
-..* Carousel
-..* Forms
-..* Jumbotron Fluid
-..* Modals
-..* Sass
-..* Scrollspy
+* Cards 
+* Carousel
+* Forms
+* Jumbotron Fluid
+* Modals
+* Sass
+* Scrollspy
